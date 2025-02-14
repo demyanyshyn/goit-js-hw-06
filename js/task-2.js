@@ -14,7 +14,7 @@ class Storage {
   }
   removeItem(itemToRemove) {
     while (this.#items.includes(itemToRemove)) {
-      this.#items.splice(1, this.#items.indexOf(itemToRemove));
+      this.#items.splice(this.#items.indexOf(itemToRemove), 1);
     }
   }
 }
